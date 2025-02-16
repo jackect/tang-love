@@ -39,7 +39,7 @@ noButton.addEventListener("click", function () {
   // 挤压 No 按钮，每次右移 50px
     noButton.style.transform = `translateX(${noOffset}px)`;
   }else{
-    document.title=`呜呜呜~被拒绝了${clickCount}次`；
+    document.title=`呜呜呜~被拒绝了${clickCount}次`;
     // 缩小 No按钮
     let noScale = 1/(clickCount-4);
     noButton.style.transform = `translateX(${noOffset}px) scale(${noScale})`;
