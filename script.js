@@ -39,11 +39,12 @@ noButton.addEventListener("click", function () {
   // 挤压 No 按钮，每次右移 50px
     noButton.style.transform = `translateX(${noOffset}px)`;
   }else{
+    document.title=`呜呜呜~被拒绝了${clickCount}次`；
     // 缩小 No按钮
     let noScale = 1/(clickCount-4);
     noButton.style.transform = `translateX(${noOffset}px) scale(${noScale})`;
   }
-  // 让图片和文字往上移动
+  // 让图片和文字往上移动ˆˆˆ
   let moveUp = clickCount * 25;
   mainImage.style.transform = `translateY(-${moveUp}px)`;
   questionText.style.transform = `translateY(-${moveUp}px)`;
